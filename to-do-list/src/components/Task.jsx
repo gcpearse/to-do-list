@@ -12,7 +12,7 @@ const Task = ({ task, setTaskList }) => {
     });
   };
 
-  const deleteEntry = () => {
+  const deleteTask = () => {
     setTaskList((currentTasks) => {
       const tasks = [...currentTasks];
       return tasks.filter((item) => {
@@ -24,7 +24,7 @@ const Task = ({ task, setTaskList }) => {
   return <li>
     <p>{task.body}</p>
     <button id={buttonStyle} onClick={handleClick}>✔</button>
-    <button id="delete-button" onClick={deleteEntry}>X</button>
+    <button id="delete-button" onClick={deleteTask}>X</button>
   </li>;
 };
 
