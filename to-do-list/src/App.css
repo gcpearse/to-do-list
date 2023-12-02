@@ -27,7 +27,7 @@
 }
 
 #list-header {
-  margin: 0.6em auto;
+  margin: 0.9em auto;
   font-family: 'Gochi Hand', cursive;
   font-size: 38px;
 }
@@ -40,7 +40,7 @@
   background: #FFF8E3;
   box-shadow: 0 0 8px gray;
   min-height: 20px;
-  width: 270px;
+  max-width: 270px;
   text-align: start;
 }
 
@@ -101,6 +101,35 @@ li button:active {
   background: #ff5c0a;
   font-family: 'Shantell Sans', cursive;
   font-weight: 600;
+}
+
+#task-input-form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 3rem auto;
+  border: 2px solid black;
+  border-radius: 10px;
+  padding: 1.2rem 0.3rem;
+  max-width: 200px;
+}
+
+#task-input-label {
+  margin: auto auto 0.6rem;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 24px;
+}
+
+#task-input {
+  margin: auto auto 0.9rem;
+  border-radius: 8px;
+  padding: 0 0.4rem;
+  line-height: 1.3rem;
+}
+
+#task-input-button {
+  border-radius: 20px;
+  padding: 0.2rem 0.8rem;
 }
 
 #hidden-error {

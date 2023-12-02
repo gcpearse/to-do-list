@@ -38,17 +38,17 @@ const TaskAdder = ({ setTaskList }) => {
   };
 
   return (
-    <div>
-      <form onSubmit={handleSubmit}>
-        <label htmlFor="task-input">
-          Add task?
-          <input
-            type="text"
-            placeholder="Enter a task..."
-            id="task-input"
-            onChange={updateInput} />
+    <div id="task-adder">
+      <form id="task-input-form" onSubmit={handleSubmit}>
+        <label id="task-input-label" htmlFor="task-input">
+          Add a task?
         </label>
-        <button>Add task!</button>
+        <input
+          type="text"
+          placeholder="Enter a task..."
+          id="task-input"
+          onChange={updateInput} />
+        <button id="task-input-button">Add task!</button>
       </form>
       <p id={errorStyle}>Field cannot be empty!</p>
     </div>
