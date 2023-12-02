@@ -26,37 +26,65 @@
   font-size: 70px;
 }
 
-#to-do-list {
-  margin: 2em 4em;
-  padding: 1em;
-  border: 2px solid black;
+#list-header {
+  margin: 0.6em auto;
+  font-family: 'Gochi Hand', cursive;
+  font-size: 38px;
+}
+
+#task-list {
+  margin: 2em auto;
+  padding: 0 0.6em;
+  border: 2px solid #FFF8E3;
   border-radius: 10px;
-}
-
-h3 {
-  margin-bottom: 0.8em;
-}
-
-ol {
-  list-style-position: inside;
-}
-
-li {
-  display: grid;
-  grid-template-columns: auto 50%;
-}
-
-li p {
-  margin: auto 0;
+  background: #FFF8E3;
+  box-shadow: 0 0 8px gray;
+  min-height: 20px;
+  width: 270px;
   text-align: start;
 }
 
+.task {
+  display: grid;
+  grid-template-columns: 90px 90px 45px 45px;
+  grid-template-rows: auto;
+  list-style-position: inside;
+  list-style-type: none;
+  margin: 1.2em auto;
+  background: #FFF8E3;
+}
+
+#task-body {
+  grid-column: 1 / 3;
+  grid-row: 1;
+  margin: auto auto auto 1.3rem;
+  background: #FFF8E3;
+  font-family: 'Shantell Sans', cursive;
+  font-size: 1rem;
+}
+
+button:hover {
+  cursor: pointer;
+}
+
 li button {
-  grid-column: 2;
-  margin: 1em 0 1em auto;
+  margin: auto;
+  border: none;
   border-radius: 100%;
-  height: 4em;
-  width: 4em;
+  box-shadow: 0 0 6px gray;
+  height: 1.8rem;
+  width: 1.8rem;
+}
+
+li button:active {
+  cursor: pointer;
+  box-shadow: 0 0 6px white;
+}
+
+.add-button {
+  grid-column: 3;
+  grid-row: 1;
+  background: #ffc300;
 }
 
 #unclicked-button {
@@ -64,11 +92,15 @@ li button {
 }
 
 #clicked-button {
-  background: green;
+  background: #00ff43;
 }
 
-#delete-button {
-  background: red;
+.delete-button {
+  grid-column: 4;
+  grid-row: 1;
+  background: #ff5c0a;
+  font-family: 'Shantell Sans', cursive;
+  font-weight: 600;
 }
 
 #hidden-error {

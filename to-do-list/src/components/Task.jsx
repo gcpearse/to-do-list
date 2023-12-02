@@ -21,10 +21,10 @@ const Task = ({ task, setTaskList }) => {
     });
   };
 
-  return <li>
-    <p>{task.body}</p>
-    <button id={buttonStyle} onClick={handleClick}>✔</button>
-    <button id="delete-button" onClick={deleteTask}>X</button>
+  return <li className="task">
+    <p id="task-body">{task.body}</p>
+    <button className="add-button" id={buttonStyle} onClick={handleClick}>✔</button>
+    <button className="delete-button" onClick={deleteTask}>X</button>
   </li>;
 };
 
