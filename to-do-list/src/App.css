@@ -1,0 +1,91 @@
+* {
+  margin: 0;
+  padding: 0;
+  background: white;
+  font-family: 'Hedvig Letters Sans', sans-serif;
+  color: #222222;
+}
+
+#root {
+  text-align: center;
+}
+
+#hero {
+  border-top: 18px solid #003566;
+  border-bottom: 14px solid #ffc300;
+  border-radius: 0 0 100% 100%;
+  padding: 1.2em 2em 2.4em;
+}
+
+.hero-text {
+  background: none;
+}
+
+#hero-header {
+  font-family: 'Gochi Hand', cursive;
+  font-size: 70px;
+}
+
+#to-do-list {
+  margin: 2em 4em;
+  padding: 1em;
+  border: 2px solid black;
+  border-radius: 10px;
+}
+
+h3 {
+  margin-bottom: 0.8em;
+}
+
+ol {
+  list-style-position: inside;
+}
+
+li {
+  display: grid;
+  grid-template-columns: auto 50%;
+}
+
+li p {
+  margin: auto 0;
+  text-align: start;
+}
+
+li button {
+  grid-column: 2;
+  margin: 1em 0 1em auto;
+  border-radius: 100%;
+  height: 4em;
+  width: 4em;
+}
+
+#unclicked-button {
+  background: #ffc300;
+}
+
+#clicked-button {
+  background: green;
+}
+
+#delete-button {
+  background: red;
+}
+
+#hidden-error {
+  display: none;
+  visibility: hidden;
+}
+
+#displayed-error {
+  display: inherit;
+  visibility: inherit;
+  color: red;
+}
+
+.back-to-top {
+  display: block;
+  position: sticky;
+  bottom: 0;
+  margin: 100vw 0 0 auto;
+  padding: 0.3em 0.6em;
+}
