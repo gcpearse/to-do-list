@@ -7,15 +7,15 @@ const Tasks = () => {
   const [taskList, setTaskList] = useState([
     {
       id: 1,
-      body: "Example task 1"
+      body: "Book hotel"
     },
     {
       id: 2,
-      body: "Example 2"
+      body: "Tidy bedroom"
     },
     {
       id: 3,
-      body: "Example task 3"
+      body: "Buy food for dinner"
     }
   ]);
 
