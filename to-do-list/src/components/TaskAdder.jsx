@@ -3,7 +3,6 @@ import { useState } from "react";
 const TaskAdder = ({ setTaskList }) => {
 
   let [taskId, setTaskId] = useState(1);
-
   const [input, setInput] = useState("");
   let [errorStyle, setErrorStyle] = useState("hidden-error");
 
@@ -17,8 +16,9 @@ const TaskAdder = ({ setTaskList }) => {
 
   const handleSubmit = (event) => {
     event.preventDefault();
-    setTaskList((currentTasks) => {
-      if (validateInput()) {
+
+    if (validateInput()) {
+      setTaskList((currentTasks) => {
         if (errorStyle !== "hidden-error") {
           setErrorStyle(() => {
             return errorStyle = "hidden-error";
@@ -31,15 +31,14 @@ const TaskAdder = ({ setTaskList }) => {
           id: taskId + 1,
           body: input
         }];
-      } else {
-        if (errorStyle !== "displayed-error") {
-          setErrorStyle(() => {
-            return errorStyle = "displayed-error";
-          });
-        }
-        return [...currentTasks];
+      })
+    } else {
+      if (errorStyle !== "displayed-error") {
+        setErrorStyle(() => {
+          return errorStyle = "displayed-error";
+        });
       }
-    });
+    }
     setInput("");
   };
 
