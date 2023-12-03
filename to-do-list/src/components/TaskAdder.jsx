@@ -25,13 +25,13 @@ const TaskAdder = ({ setTaskList }) => {
           });
         }
         setTaskId((value) => {
-          return value + 1
-        })
+          return value + 1;
+        });
         return [...currentTasks, {
           id: taskId + 1,
           body: input
         }];
-      })
+      });
     } else {
       if (errorStyle !== "displayed-error") {
         setErrorStyle(() => {

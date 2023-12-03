@@ -8,7 +8,7 @@ function App() {
     <>
       <Header />
       <Tasks />
-      <Footer/>
+      <Footer />
     </>
   );
 }
