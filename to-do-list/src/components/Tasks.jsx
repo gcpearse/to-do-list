@@ -7,7 +7,7 @@ const Tasks = () => {
   const [taskList, setTaskList] = useState([
     {
       id: 1,
-      body: "Create my list"
+      body: "Create my list..."
     }
   ]);
 
