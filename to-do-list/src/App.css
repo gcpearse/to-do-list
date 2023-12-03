@@ -105,6 +105,23 @@ li button:active {
   text-shadow: 0 0 1px gray;
 }
 
+#delete-list-button {
+  margin-top: 0.8em;
+  border: none;
+  border-radius: 20px;
+  padding: 0.4em 0.8em;
+  background: #ff5c0a;
+  font-family: 'Shantell Sans', cursive;
+  color: white;
+  font-size: 1rem;
+  box-shadow: 0 0 6px gray;
+  text-shadow: 0 0 1px gray;
+}
+
+#delete-list-button:active {
+  box-shadow: 0 0 10px white;
+}
+
 #task-adder {
   position: sticky;
   bottom: 14vw;
