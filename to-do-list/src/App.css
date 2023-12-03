@@ -103,33 +103,51 @@ li button:active {
   font-weight: 600;
 }
 
+#task-adder {
+  position: sticky;
+  bottom: 14vw;
+  background: none;
+}
+
 #task-input-form {
   display: flex;
   flex-direction: column;
   align-items: center;
   margin: 3rem auto;
-  border: 2px solid black;
+  border: 2px solid #FFD60A;
   border-radius: 10px;
   padding: 1.2rem 0.3rem;
+  background: #FFD60A;
+  box-shadow: 0 0 8px gray;
   max-width: 200px;
 }
 
 #task-input-label {
-  margin: auto auto 0.6rem;
+  margin: auto auto 0.7rem;
+  background: #FFD60A;
   font-family: 'Gochi Hand', cursive;
   font-size: 24px;
+  color: #000814;
 }
 
 #task-input {
-  margin: auto auto 0.9rem;
+  margin: auto auto 1.1rem;
+  border: 2px solid #000814;
   border-radius: 8px;
-  padding: 0 0.4rem;
+  padding: 0 0.5rem;
   line-height: 1.3rem;
+  font-family: 'Shantell Sans', cursive;
 }
 
 #task-input-button {
+  border: 2px solid #000814;
   border-radius: 20px;
-  padding: 0.2rem 0.8rem;
+  padding: 0.3rem 0.8rem;
+  font-family: 'Shantell Sans', cursive;
+}
+
+#task-input-button:active {
+  border: 2px solid white;
 }
 
 #hidden-error {
@@ -148,5 +166,9 @@ li button:active {
   position: sticky;
   bottom: 0;
   margin: 100vw 0 0 auto;
-  padding: 0.3em 0.6em;
+  border: none;
+  border-radius: 20px 0 0;
+  padding: 0.5em 0.8em;
+  background: #003566;
+  color: white;
 }
