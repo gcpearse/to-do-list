@@ -51,7 +51,7 @@ const TaskAdder = ({ setTaskList }) => {
           value={input}
           onChange={updateInput} />
         <button id="task-input-button">Add!</button>
-        <p id={errorStyle}>Field cannot be empty!</p>
+        <p id={errorStyle}>Oops! That isn't right...</p>
       </form>
     </div>
   );

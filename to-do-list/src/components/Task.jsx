@@ -3,7 +3,7 @@ import { useState } from "react";
 const Task = ({ task, setTaskList }) => {
 
   let [isClicked, setIsClicked] = useState(false);
-  let buttonStyle = "unclicked-button";
+  let buttonStyle = "";
   if (isClicked) buttonStyle = "clicked-button";
 
   const handleClick = () => {

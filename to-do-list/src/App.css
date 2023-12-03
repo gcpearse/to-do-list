@@ -85,14 +85,14 @@ li button:active {
   grid-column: 3;
   grid-row: 1;
   background: #ffc300;
-}
-
-#unclicked-button {
-  background: #ffc300;
+  color: #001D3D;
+  text-shadow: 0 0 1px white;
 }
 
 #clicked-button {
-  background: #00ff43;
+  background: #356600;
+  color: #EEEEEE;
+  text-shadow: 0 0 1px gray;
 }
 
 .delete-button {
@@ -101,6 +101,8 @@ li button:active {
   background: #ff5c0a;
   font-family: 'Shantell Sans', cursive;
   font-weight: 600;
+  color: white;
+  text-shadow: 0 0 1px gray;
 }
 
 #task-adder {
@@ -127,27 +129,33 @@ li button:active {
   background: #FFD60A;
   font-family: 'Gochi Hand', cursive;
   font-size: 24px;
-  color: #000814;
+  text-shadow: 0 0 2px white;
+  color: #001D3D;
 }
 
 #task-input {
   margin: auto auto 1.1rem;
-  border: 2px solid #000814;
+  border: 2px solid #001D3D;
   border-radius: 8px;
   padding: 0 0.5rem;
+  background: #FFF8E3;
   line-height: 1.3rem;
   font-family: 'Shantell Sans', cursive;
 }
 
 #task-input-button {
-  border: 2px solid #000814;
-  border-radius: 20px;
-  padding: 0.3rem 0.8rem;
+  margin: 0.3em auto;
+  border: 2px solid #FFF8E3;
+  border-radius: 18px;
+  padding: 0.4rem 1.4rem;
+  background: #FFF8E3;
+  box-shadow: 0 0 10px gray;
   font-family: 'Shantell Sans', cursive;
+  font-weight: 500;
 }
 
 #task-input-button:active {
-  border: 2px solid white;
+  box-shadow: 0 0 10px white;
 }
 
 #hidden-error {
@@ -158,7 +166,13 @@ li button:active {
 #displayed-error {
   display: inherit;
   visibility: inherit;
-  color: red;
+  margin-top: 1em;
+  background: none;
+  font-family: 'Shantell Sans', cursive;
+  font-size: 14px;
+  font-weight: 500;
+  text-shadow: 0 0 10px white;
+  color: #001D3D;
 }
 
 .back-to-top {
@@ -168,7 +182,8 @@ li button:active {
   margin: 100vw 0 0 auto;
   border: none;
   border-radius: 20px 0 0;
-  padding: 0.5em 0.8em;
+  padding: 0.6em 0.9em;
   background: #003566;
+  font-size: 14px;
   color: white;
 }
