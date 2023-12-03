@@ -4,7 +4,9 @@
 
 This to-do list is a mini app built with React and Vite that allows users to add tasks to a to-do list, mark them as complete, and delete them from the list.
 
-This is a standalone mini project and is currently a work in progress.
+The app is optimised for mobile, but also works well on desktop displays.
+
+This is a standalone mini project that may be updated in the future.
 
 ## Local Setup Instructions
 
