@@ -106,7 +106,7 @@ li button:active {
 }
 
 #delete-list-button {
-  margin-top: 0.8em;
+  margin: 0.6em auto;
   border: none;
   border-radius: 20px;
   padding: 0.4em 0.8em;
@@ -124,7 +124,7 @@ li button:active {
 
 #task-adder {
   position: sticky;
-  bottom: 14vw;
+  bottom: 16vw;
   background: none;
 }
 
@@ -132,7 +132,7 @@ li button:active {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 3rem auto;
+  margin: 2rem auto;
   border: 2px solid #FFD60A;
   border-radius: 10px;
   padding: 1.2rem 0.3rem;
@@ -192,15 +192,28 @@ li button:active {
   color: #001D3D;
 }
 
-.back-to-top {
-  display: block;
-  position: sticky;
+footer {
+  display: flex;
+  justify-content: space-between;
+}
+
+.footer-button {
+  position: fixed;
   bottom: 0;
-  margin: 100vw 0 0 auto;
+  margin-top: 100vw;
   border: none;
-  border-radius: 20px 0 0;
   padding: 0.6em 0.9em;
   background: #003566;
   font-size: 14px;
   color: white;
+  min-width: 98px;
+}
+
+#help-button {
+  border-radius: 0 20px 0 0;
+}
+
+#back-to-top-button {
+  right: 0;
+  border-radius: 20px 0 0;
 }
