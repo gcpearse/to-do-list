@@ -203,11 +203,11 @@ footer {
   min-width: 98px;
 }
 
-#help-button {
+#scroll-down-button {
   border-radius: 0 20px 0 0;
 }
 
-#back-to-top-button {
+#scroll-up-button {
   right: 0;
   border-radius: 20px 0 0;
 }
