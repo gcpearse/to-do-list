@@ -122,17 +122,11 @@ li button:active {
   box-shadow: 0 0 10px white;
 }
 
-#task-adder {
-  position: sticky;
-  bottom: 16vw;
-  background: none;
-}
-
 #task-input-form {
   display: flex;
   flex-direction: column;
   align-items: center;
-  margin: 2rem auto;
+  margin: 2rem auto 4.4rem;
   border: 2px solid #FFD60A;
   border-radius: 10px;
   padding: 1.2rem 0.3rem;
