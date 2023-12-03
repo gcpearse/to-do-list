@@ -11,6 +11,12 @@ const Tasks = () => {
     }
   ]);
 
+  const handleClick = () => {
+    setTaskList(() => {
+      return [];
+    });
+  };
+
   return (
     <>
       <div id="to-do-list">
@@ -21,6 +27,7 @@ const Tasks = () => {
           })}
         </ol>
       </div>
+      <button id="delete-list-button" onClick={handleClick}>Delete list</button>
       <TaskAdder setTaskList={setTaskList} />
     </>
   );
