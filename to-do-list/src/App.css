@@ -201,6 +201,11 @@ footer {
   font-size: 14px;
   color: white;
   min-width: 98px;
+  box-shadow: 0 0 5px gray;
+}
+
+.footer-button:active {
+  box-shadow: 0 0 5px white;
 }
 
 #scroll-down-button {
