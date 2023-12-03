@@ -35,6 +35,7 @@ const TaskAdder = ({ setTaskList }) => {
         return [...currentTasks];
       }
     });
+    setInput("");
   };
 
   return (
@@ -47,10 +48,11 @@ const TaskAdder = ({ setTaskList }) => {
           type="text"
           placeholder="Enter a task..."
           id="task-input"
+          value={input}
           onChange={updateInput} />
         <button id="task-input-button">Add task!</button>
+        <p id={errorStyle}>Field cannot be empty!</p>
       </form>
-      <p id={errorStyle}>Field cannot be empty!</p>
     </div>
   );
 };
