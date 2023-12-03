@@ -2,6 +2,8 @@ import { useState } from "react";
 
 const TaskAdder = ({ setTaskList }) => {
 
+  let [taskId, setTaskId] = useState(1);
+
   const [input, setInput] = useState("");
   let [errorStyle, setErrorStyle] = useState("hidden-error");
 
@@ -22,8 +24,11 @@ const TaskAdder = ({ setTaskList }) => {
             return errorStyle = "hidden-error";
           });
         }
+        setTaskId((value) => {
+          return value + 1
+        })
         return [...currentTasks, {
-          id: currentTasks.length + 1,
+          id: taskId + 1,
           body: input
         }];
       } else {
