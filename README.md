@@ -32,7 +32,11 @@ git push -u origin main
 
 ### Prerequisites
 
-Please ensure you have installed Node.js.
+Please ensure you have installed Node.js. If you encounter any issues when running the project locally, you may need to use a different version of Node.
+
+You can check your Node version by running `node --version`. 
+
+Consider using Node Version Manager (nvm) to install, remove, and switch between different Node versions on your local machine.
 
 ### Installing Packages and Running the Project
 
