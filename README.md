@@ -4,6 +4,8 @@
 
 This to-do list is a mini app built with React and Vite that allows users to add tasks to a to-do list, mark them as complete, and delete them from the list.
 
+The hosted version of this application can be found [here](https://e-task.netlify.app).
+
 The app is optimised for mobile, but also works well on desktop displays.
 
 This is a standalone mini project that may be updated in the future.
