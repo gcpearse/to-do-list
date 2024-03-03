@@ -12,9 +12,7 @@ const Tasks = () => {
   ]);
 
   const handleClick = () => {
-    setTaskList(() => {
-      return [];
-    });
+    setTaskList([]);
   };
 
   return (
@@ -23,11 +21,20 @@ const Tasks = () => {
         <h3>My List</h3>
         <ol>
           {taskList.map((task) => {
-            return <Task key={task.id} task={task} setTaskList={setTaskList} />;
+            return (
+              <Task
+                key={task.id}
+                task={task}
+                setTaskList={setTaskList} />
+            );
           })}
         </ol>
       </div>
-      <button id="delete-list-button" onClick={handleClick}>Delete list</button>
+      <button
+        id="delete-list-button"
+        onClick={handleClick}>
+        Delete list
+      </button>
       <TaskAdder setTaskList={setTaskList} />
     </>
   );

@@ -2,9 +2,7 @@ import { useState } from "react";
 
 const Task = ({ task, setTaskList }) => {
 
-  let [isClicked, setIsClicked] = useState(false);
-  let buttonStyle = "";
-  if (isClicked) buttonStyle = "clicked-button";
+  const [isClicked, setIsClicked] = useState(false);
 
   const handleClick = () => {
     setIsClicked((bool) => {
@@ -25,8 +23,20 @@ const Task = ({ task, setTaskList }) => {
     <li className="task">
       <p id="task-body">{task.body}</p>
       <div id="task-btns-wrapper">
-        <button className="add-button" id={buttonStyle} onClick={handleClick}>✔</button>
-        <button className="delete-button" onClick={deleteTask}>X</button>
+        <button
+          className={!isClicked ? (
+            "add-button"
+          ) : (
+            "add-button clicked-button"
+          )}
+          onClick={handleClick}>
+          ✔
+        </button>
+        <button
+          className="delete-button"
+          onClick={deleteTask}>
+          X
+        </button>
       </div>
     </li>
   );
