@@ -44,7 +44,9 @@ const TaskAdder = ({ setTaskList }) => {
 
   return (
     <div>
-      <form onSubmit={handleSubmit}>
+      <form
+        id="task-input-form"
+        onSubmit={handleSubmit}>
         <label htmlFor="task-input">
           Add a task?
         </label>
