@@ -19,9 +19,9 @@ const Tasks = () => {
 
   return (
     <>
-      <div id="to-do-list">
-        <h3 id="list-header">My List</h3>
-        <ol id='task-list'>
+      <div>
+        <h3>My List</h3>
+        <ol>
           {taskList.map((task) => {
             return <Task key={task.id} task={task} setTaskList={setTaskList} />;
           })}
